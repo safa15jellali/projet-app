@@ -1,0 +1,43 @@
+
+<ion-header>
+  <ion-toolbar class="toolbar">
+    <ion-buttons slot="start">
+      <ion-back-button  defaultHref="/menu"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Profil</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  
+  
+  
+  <div class="flex"> 
+    <div class="ion-padding-top ion-text-center">
+     <div class="border-blue">
+      <div class="img" (click)="goToEditProfil()"> <img src="..\..\assets\avatar.png"> </div>
+     </div>
+    </div>
+   </div> 
+ 
+   <ion-label > <h2>{{username}}</h2></ion-label>
+   <ion-icon slot="start" name="call" color="success"></ion-icon><ion-label (click)="goToEditProfil()"><h2> safa jellali</h2></ion-label>
+   <ion-label (click)="goToEditProfil()"> <h6>+216991100</h6></ion-label>
+   <ion-label class="centr"> <h3> <ion-icon slot="start" name="call" color="secondary" (click)="calsms()" class="pos"></ion-icon> call
+     <ion-icon slot="start" name="mail" (click)="calsms()" >  </ion-icon> sms
+
+     <a href="http://www.voice.com" class="mode" > <ion-icon name="logo-voice" color ="success"></ion-icon>Going</a></h3>
+  </ion-label>
+   
+
+  
+  
+  <ion-list>
+   <ion-item>
+     <ion-icon name="home" color="danger"></ion-icon>
+     <ion-label  class="padding">Add home</ion-label>
+   </ion-item>
+
+   
+</ion-list>
+
+</ion-content>
